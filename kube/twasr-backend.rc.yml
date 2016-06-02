@@ -23,10 +23,10 @@ spec:
           volumeMounts:
             -
               mountPath: /opt/models
-              name: kaldi_model
+              name: kaldi-model
       volumes:
         -
-          name: kaldi_model
+          name: kaldi-model
           rbd:
             monitors:
               - 10.18.6.1:6789
