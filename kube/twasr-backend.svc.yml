@@ -8,5 +8,5 @@ spec:
     role: backend
   ports:
     -
-      protocal: TCP
+      protocol: TCP
       port: 80
