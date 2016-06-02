@@ -14,23 +14,27 @@ spec:
         role: backend
     spec:
       containers:
-        - name: twasr
+        -
+          name: twasr
           image: tongda/twasr-backend
           ports:
-            - containerPort: 80
+            -
+              containerPort: 80
           volumeMounts:
-            - mountPath: /opt/models
+            -
+              mountPath: /opt/models
               name: kaldi_model
       volumes:
-        name: kaldi_model
-          - rbd:
-              monitors:
-                - 10.18.6.1:6789
-              pool: rbd
-              image: kaldi_model
-              user: admin
-              secretRef:
-                name: ceph-secret
-              keyring: /etc/ceph/ceph.client.admin.keyring
-              fsType: ext4
-              readOnly: true
+        -
+          name: kaldi_model
+          rbd:
+            monitors:
+              - 10.18.6.1:6789
+            pool: rbd
+            image: kaldi_model
+            user: admin
+            secretRef:
+              name: ceph-secret
+            keyring: /etc/ceph/ceph.client.admin.keyring
+            fsType: ext4
+            readOnly: true
