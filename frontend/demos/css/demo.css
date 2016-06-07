@@ -59,3 +59,7 @@ del {
 button {
 	width: 7em;
 }
+
+button:focus {
+	outline: none;
+}

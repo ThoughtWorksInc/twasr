@@ -165,6 +165,10 @@ function clearTranscription() {
 	$("#trans").prop("selectionEnd", 0);
 }
 
+function handleClickUpload(e) {
+	$("#files").click();
+}
+
 $(document).ready(function() {
 	dictate.init();
 
@@ -177,7 +181,7 @@ $(document).ready(function() {
 
   function handleFileSelect(evt) {
     var files = evt.target.files;
-    console.log(evt)
+	$("#status").html("Current file is " + files[0].name);
 
     f = files[0];
     blob = f.slice();
