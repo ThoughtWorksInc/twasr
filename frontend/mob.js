@@ -170,6 +170,7 @@ function clearLog() {
 }
 
 function handleClickUpload(e) {
+  $("#files").val("");
 	$("#files").click();
 }
 
