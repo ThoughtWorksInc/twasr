@@ -57,10 +57,14 @@ del {
 }
 
 button {
-	width: 7em;
 	margin: 5px;
 }
 
 button:focus {
 	outline: none;
+}
+
+textarea {
+	border: 1px solid #ccc;
+	border-radius: 4px;
 }

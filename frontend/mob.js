@@ -165,6 +165,10 @@ function clearTranscription() {
 	$("#trans").prop("selectionEnd", 0);
 }
 
+function clearLog() {
+  $("#log").html("");
+}
+
 function handleClickUpload(e) {
 	$("#files").click();
 }
