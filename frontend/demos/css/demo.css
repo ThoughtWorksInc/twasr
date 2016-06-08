@@ -58,6 +58,7 @@ del {
 
 button {
 	width: 7em;
+	margin: 5px;
 }
 
 button:focus {

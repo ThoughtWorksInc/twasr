@@ -187,6 +187,7 @@ $(document).ready(function() {
     blob = f.slice();
 
     dictate.upload(blob);
+    $("#buttonCancel").prop("disabled", false);
   }
   console.log("hello")
   document.getElementById('files').addEventListener('change', handleFileSelect, false);
